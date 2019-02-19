@@ -6,16 +6,26 @@
 <p>Iterate over the javascript array to create a list in HTML.</p>
 
 <ul id="item"></ul>
+  
+<button onclick="length()">Convert to String Length</button>
 
 <script>
 var txt = "";
 var myList = ["monkeys", "giraffes", "gorillas", "elephants", "penguins"];
-myList.forEach(myFunction);
+myList.forEach(makeList);
 document.getElementById("item").innerHTML = txt;
 
-function myFunction(value) {
+
+function makeList(value) {
   txt = txt + "<li>" + value + "</li>"; 
 }
+  
+function length(string) {
+  var x = document.getElementsByTagName("LI");
+  li.innertext=li.length;
+}
+   
+ 
 </script>
 
 </body>
