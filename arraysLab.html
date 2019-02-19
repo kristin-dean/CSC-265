@@ -4,15 +4,23 @@
   <li id="item"></li>
   </ul>
 <script>
+
+<h2>JavaScript Array.forEach()</h2>
+
+<p>Calls a function once for each array element.</p>
+
+<ul id="item"></ul>
+
+<script>
 var txt = "";
 var myList = ["monkeys", "giraffes", "gorillas", "penguins"];
-numbers.forEach(myFunction);
+myList.forEach(myFunction);
 document.getElementById("item").innerHTML = txt;
 
-function myFunction(d) {
-  txt = txt + d + "<br />"; 
+function myFunction(value) {
+  txt = txt + "<li>" + value + "</li>"; 
 }
+</script>
 
-  </script>
 </body>
 </html>
