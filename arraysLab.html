@@ -7,7 +7,7 @@
 
 <ul id="item"></ul>
   
-<button onclick="length()">Convert to String Length</button>
+<button onclick="convert(string)">Convert to String Length</button>
 
 <script>
 var txt = "";
@@ -21,7 +21,7 @@ function makeList(value) {
 }
   
   
-function convert(string) {
+function convert(str) {
   var str = document.getElementsByTagName("LI");
   var n = String(str)
   var l = n.length
