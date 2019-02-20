@@ -7,7 +7,7 @@
 
 <ul id="item"></ul>
   
-<button onclick="convert(myList.forEach(convert()))">Convert to String Length</button>
+<button onclick="convert()">Convert to String Length</button>
   
 <script>
 var txt = "";
@@ -20,11 +20,11 @@ function makeList(value) {
   txt = txt + "<li id='toChange'>" + value + "</li>"; 
 }
   
-  
+
 function convert() {
   var x = document.getElementById('toChange');
   var n = String(x)
-  var l = x.length;
+  var l = n.length;
   document.getElementsByTagName("LI").innerHTML = l;
 }
    
