@@ -7,7 +7,8 @@
 
 <ul id="item"></ul>
   
-<button onclick="convert(myList.forEach(convert)">Convert to String Length</button>
+<button onclick="convert(myList.forEach(convert()))">Convert to String Length</button>
+  
 <script>
 var txt = "";
 var myList = ["monkeys", "giraffes", "gorillas", "elephants", "penguins"];
@@ -21,7 +22,8 @@ function makeList(value) {
   
   
 function convert() {
-  var x = String(document.getElementsByTagName("LI"));
+  var x = document.getElementById('toChange');
+  var n = String(x)
   var l = x.length;
   document.getElementsByTagName("LI").innerHTML = l;
 }
