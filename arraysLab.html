@@ -1,25 +1,30 @@
 <html>
+ 
+<head>
+ <script src='https://d3js.org/d3.v4.js'></script>
+</head>
+
 <body>
+<script>
 
-<h2>JavaScript Arrays</h2>
-
-<ul id="item">
-</ul>
- 
-<p>
- 
-<script src='https://d3js.org/d3.v4.js'>
-var txt = "";
 var myList = ["monkeys", "giraffes", "gorillas", "elephants", "penguins", "lions", "hippos", "manatees"];
 
 d3.select("body").selectAll("p")
   .data(myList)
   .enter()
   .append("p")
-  .text("New Paragraph");
-
+  .text("New Paragraph")
  
 </script>
+ 
+<ul id="item"></ul>
+
+d3.select("body").selectAll("p")
+  .data(myList)
+  .enter()
+  .append("p")
+  .text("New Paragraph")
+  </script>
 
 </body>
 </html>
