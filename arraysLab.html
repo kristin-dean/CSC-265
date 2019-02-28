@@ -5,21 +5,19 @@
 </head>
 
 <body>
+<ul></ul>
+ 
 <script>
 
 var myList = ["monkeys", "giraffes", "gorillas", "elephants", "penguins", "lions", "hippos", "manatees"];
 
-d3.select("body").selectAll("p")
+d3.select("body").selectAll("li")
   .data(myList)
   .enter()
-  .append("p")
-  .text("New Paragraph");
+  .append("li")
+  .text(function(d) { return d; });
  
 </script>
- 
-<ul id="item"></ul>
-
-  </script>
 
 </body>
 </html>
