@@ -4,17 +4,16 @@
 <h2>JavaScript Arrays</h2>
 
 <ul id="item">
- <li></li>
 </ul>
  
 <script src='https://d3js.org/d3.v5.js'>
 var txt = "";
 var myList = ["monkeys", "giraffes", "gorillas", "elephants", "penguins", "lions", "hippos", "manatees"];
 
-d3.select("body").selectAll("li")
+d3.select("body").selectAll("p")
   .data(myList)
   .enter()
-  .append("li")
+  .append("p")
   .text("New Paragraph");
 
  
