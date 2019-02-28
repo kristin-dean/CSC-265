@@ -6,23 +6,17 @@
 <p>Iterate over the javascript array to create a list in HTML.</p>
 
 <ul id="item"></ul>
-  
-<button onclick="convert()">Convert to String Length</button>
-<button onclick-"addBig()">Grow Animals</button>
-
-  <p id="converting">Have not gotten to string length yet.</p>
-  <p id="makeBigger">Have not gotten to adding text in yet.</p>
-  
+ 
 <script>
 var txt = "";
-var myList = ["monkeys", "giraffes", "gorillas", "elephants", "penguins"];
-myList.forEach(makeList);
-document.getElementById("item").innerHTML = txt;
+var myList = ["monkeys", "giraffes", "gorillas", "elephants", "penguins", "lions", "hippos", "manatees"];
 
+d3.select("body").selectAll("p")
+  .data(myList)
+  .enter()
+  .append("p")
+  .text("New Paragraph")
 
-function makeList(value) {
-  txt = txt + "<li id='toChange'>" + value + "</li>"; 
-}
  
 </script>
 
